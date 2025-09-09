@@ -1,0 +1,1841 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Princess Royal Castle Birthday ✨</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Dancing+Script:wght@400;700&family=Cinzel:wght@400;600;700&display=swap');
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Cinzel', serif;
+            background: linear-gradient(135deg, #1a1a2e, #16213e, #0f3460, #533483);
+            background-size: 400% 400%;
+            animation: premiumGradient 12s ease infinite;
+            overflow-x: hidden;
+            color: #fff;
+        }
+
+        @keyframes premiumGradient {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        .premium-sparkle {
+            position: fixed;
+            width: 6px;
+            height: 6px;
+            background: radial-gradient(circle, #ffd700, #fff);
+            border-radius: 50%;
+            animation: premiumSparkle 4s linear infinite;
+            pointer-events: none;
+            z-index: 1000;
+            box-shadow: 0 0 10px #ffd700;
+        }
+
+        @keyframes premiumSparkle {
+            0% { 
+                transform: translateY(100vh) rotate(0deg) scale(0); 
+                opacity: 0; 
+            }
+            10% { 
+                opacity: 1; 
+                transform: translateY(90vh) rotate(36deg) scale(1); 
+            }
+            90% { 
+                opacity: 1; 
+                transform: translateY(10vh) rotate(324deg) scale(1); 
+            }
+            100% { 
+                transform: translateY(-10px) rotate(360deg) scale(0); 
+                opacity: 0; 
+            }
+        }
+
+        .royal-header {
+            text-align: center;
+            padding: 2rem;
+            position: relative;
+            background: linear-gradient(180deg, rgba(255,215,0,0.05), transparent);
+        }
+
+        .modern-hero {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 40vh;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-content {
+            text-align: center;
+            z-index: 2;
+            position: relative;
+        }
+
+        .modern-crown {
+            width: 120px;
+            height: 120px;
+            margin: 0 auto 2rem;
+            position: relative;
+            animation: modernFloat 4s ease-in-out infinite;
+        }
+
+        @keyframes modernFloat {
+            0%, 100% { transform: translateY(0px) rotate(0deg); }
+            50% { transform: translateY(-15px) rotate(5deg); }
+        }
+
+        .crown-circle {
+            width: 100%;
+            height: 100%;
+            border: 4px solid rgba(255,215,0,0.3);
+            border-radius: 50%;
+            position: relative;
+            background: linear-gradient(135deg, 
+                rgba(255,215,0,0.1), 
+                rgba(255,215,0,0.05));
+            backdrop-filter: blur(20px);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .crown-inner {
+            font-size: 3rem;
+            animation: crownGlow 3s ease-in-out infinite alternate;
+        }
+
+        @keyframes crownGlow {
+            from { 
+                filter: drop-shadow(0 0 10px rgba(255,215,0,0.5));
+                transform: scale(1);
+            }
+            to { 
+                filter: drop-shadow(0 0 25px rgba(255,215,0,0.8));
+                transform: scale(1.1);
+            }
+        }
+
+        .royal-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 3.5rem;
+            font-weight: 700;
+            color: #FFD700;
+            margin: 1rem 0;
+            letter-spacing: 2px;
+            background: linear-gradient(135deg, #FFD700, #FFA500, #FF8C00);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            position: relative;
+        }
+
+        .royal-subtitle {
+            font-family: 'Cinzel', serif;
+            font-size: 1.2rem;
+            color: rgba(255,255,255,0.8);
+            margin-bottom: 2rem;
+            font-weight: 400;
+            letter-spacing: 1px;
+        }
+
+        .premium-section {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 3rem;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2.5rem;
+        }
+
+        .luxury-card {
+            background: linear-gradient(145deg, 
+                rgba(255,255,255,0.1), 
+                rgba(255,255,255,0.05));
+            backdrop-filter: blur(20px);
+            border: 2px solid rgba(255,215,0,0.3);
+            border-radius: 25px;
+            padding: 2.5rem;
+            box-shadow: 
+                0 20px 40px rgba(0,0,0,0.3),
+                inset 0 1px 0 rgba(255,255,255,0.2);
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .luxury-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, 
+                transparent, 
+                rgba(255,215,0,0.1), 
+                transparent);
+            transition: left 0.6s;
+        }
+
+        .luxury-card:hover::before {
+            left: 100%;
+        }
+
+        .luxury-card:hover {
+            transform: translateY(-15px) scale(1.02);
+            box-shadow: 
+                0 30px 60px rgba(0,0,0,0.4),
+                0 0 50px rgba(255,215,0,0.2),
+                inset 0 1px 0 rgba(255,255,255,0.3);
+            border-color: rgba(255,215,0,0.6);
+        }
+
+        .card-crown {
+            width: 80px;
+            height: 60px;
+            margin: 0 auto 1.5rem;
+            position: relative;
+        }
+
+        .crown-svg {
+            width: 100%;
+            height: 100%;
+            filter: drop-shadow(0 5px 15px rgba(255,215,0,0.5));
+            animation: crownMajesty 4s ease-in-out infinite;
+        }
+
+        @keyframes crownMajesty {
+            0%, 100% { transform: rotate(0deg) scale(1); }
+            25% { transform: rotate(2deg) scale(1.05); }
+            50% { transform: rotate(0deg) scale(1.1); }
+            75% { transform: rotate(-2deg) scale(1.05); }
+        }
+
+        .luxury-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.2rem;
+            font-weight: 700;
+            color: #FFD700;
+            text-align: center;
+            margin-bottom: 1.5rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+
+        .premium-button {
+            background: linear-gradient(45deg, #FFD700, #FFA500, #FF8C00);
+            color: #1a1a2e;
+            border: none;
+            padding: 1.2rem 2.5rem;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            font-weight: 700;
+            font-family: 'Cinzel', serif;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin: 0.8rem 0.5rem;
+            box-shadow: 
+                0 8px 20px rgba(255,215,0,0.3),
+                inset 0 1px 0 rgba(255,255,255,0.3);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .premium-button::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, 
+                transparent, 
+                rgba(255,255,255,0.3), 
+                transparent);
+            transition: left 0.5s;
+        }
+
+        .premium-button:hover::before {
+            left: 100%;
+        }
+
+        .premium-button:hover {
+            transform: translateY(-5px) scale(1.05);
+            box-shadow: 
+                0 15px 35px rgba(255,215,0,0.4),
+                0 0 30px rgba(255,215,0,0.3),
+                inset 0 1px 0 rgba(255,255,255,0.4);
+            background: linear-gradient(45deg, #FFA500, #FFD700, #FFFF00);
+        }
+
+        .premium-button:active {
+            transform: translateY(-2px) scale(1.02);
+        }
+
+        .royal-input {
+            width: 100%;
+            padding: 1.2rem 1.5rem;
+            border: 2px solid rgba(255,215,0,0.3);
+            border-radius: 25px;
+            background: rgba(255,255,255,0.1);
+            backdrop-filter: blur(10px);
+            color: #fff;
+            font-size: 1.1rem;
+            font-family: 'Cinzel', serif;
+            margin: 1rem 0;
+            transition: all 0.3s ease;
+        }
+
+        .royal-input::placeholder {
+            color: rgba(255,255,255,0.7);
+        }
+
+        .royal-input:focus {
+            outline: none;
+            border-color: #FFD700;
+            box-shadow: 0 0 20px rgba(255,215,0,0.3);
+            background: rgba(255,255,255,0.15);
+        }
+
+        .wish-showcase {
+            background: linear-gradient(145deg, 
+                rgba(255,215,0,0.1), 
+                rgba(255,215,0,0.05));
+            border-radius: 20px;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            min-height: 120px;
+            border-left: 5px solid #FFD700;
+            backdrop-filter: blur(10px);
+            box-shadow: inset 0 0 20px rgba(255,215,0,0.1);
+        }
+
+        .premium-memory-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 15px;
+            max-width: 320px;
+            margin: 1.5rem auto;
+        }
+
+        .luxury-memory-card {
+            width: 70px;
+            height: 70px;
+            background: linear-gradient(45deg, #4169E1, #6495ED);
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.8rem;
+            cursor: pointer;
+            transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            border: 3px solid rgba(255,215,0,0.3);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .luxury-memory-card::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 0;
+            height: 0;
+            background: radial-gradient(circle, rgba(255,215,0,0.3), transparent);
+            transition: all 0.3s ease;
+            border-radius: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .luxury-memory-card:hover::before {
+            width: 100px;
+            height: 100px;
+        }
+
+        .luxury-memory-card:hover {
+            transform: scale(1.1) rotateY(10deg);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.4);
+            border-color: #FFD700;
+        }
+
+        .luxury-memory-card.flipped {
+            background: linear-gradient(45deg, #FFD700, #FFA500);
+            color: #1a1a2e;
+            transform: rotateY(180deg);
+        }
+
+        .royal-photo-frame {
+            width: 220px;
+            height: 220px;
+            border: 8px solid #FFD700;
+            border-radius: 25px;
+            margin: 1.5rem auto;
+            background: linear-gradient(45deg, #fff, #f8f8ff);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 4rem;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 
+                0 15px 35px rgba(0,0,0,0.3),
+                inset 0 0 20px rgba(255,215,0,0.2);
+        }
+
+        .royal-photo-frame::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: linear-gradient(45deg, 
+                transparent, 
+                rgba(255,215,0,0.1), 
+                transparent);
+            animation: frameShimmer 3s linear infinite;
+        }
+
+        @keyframes frameShimmer {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .premium-cake {
+            text-align: center;
+            margin: 2rem 0;
+        }
+
+        .luxury-cake-svg {
+            width: 180px;
+            height: 180px;
+            margin: 1.5rem auto;
+            cursor: pointer;
+            transition: all 0.4s ease;
+            filter: drop-shadow(0 10px 25px rgba(0,0,0,0.3));
+        }
+
+        .luxury-cake-svg:hover {
+            transform: scale(1.1) rotate(5deg);
+            filter: drop-shadow(0 15px 35px rgba(0,0,0,0.4));
+        }
+
+        .candle-flame {
+            animation: luxuryFlicker 1.5s ease-in-out infinite alternate;
+        }
+
+        @keyframes luxuryFlicker {
+            from { 
+                opacity: 0.8; 
+                transform: scale(1) rotate(-2deg); 
+            }
+            to { 
+                opacity: 1; 
+                transform: scale(1.1) rotate(2deg); 
+            }
+        }
+
+        .premium-fireworks {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 999;
+        }
+
+        .luxury-firework {
+            position: absolute;
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            animation: luxuryFirework 2s ease-out forwards;
+        }
+
+        @keyframes luxuryFirework {
+            0% {
+                transform: scale(0);
+                opacity: 1;
+            }
+            50% {
+                transform: scale(15);
+                opacity: 0.8;
+            }
+            100% {
+                transform: scale(30);
+                opacity: 0;
+            }
+        }
+
+        .score-royal {
+            font-size: 1.8rem;
+            color: #FFD700;
+            margin: 1.5rem 0;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+            font-weight: 700;
+        }
+
+        .quiz-luxury {
+            text-align: center;
+        }
+
+        .quiz-question-premium {
+            font-size: 1.4rem;
+            margin: 1.5rem 0;
+            color: #E6E6FA;
+            font-weight: 600;
+        }
+
+        .quiz-options-premium {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            margin: 1.5rem 0;
+        }
+
+        .quiz-option-luxury {
+            background: linear-gradient(145deg, 
+                rgba(255,215,0,0.1), 
+                rgba(255,215,0,0.05));
+            border: 2px solid rgba(255,215,0,0.3);
+            border-radius: 25px;
+            padding: 1.2rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+            color: #fff;
+            font-weight: 600;
+        }
+
+        .quiz-option-luxury:hover {
+            background: linear-gradient(145deg, 
+                rgba(255,215,0,0.2), 
+                rgba(255,215,0,0.1));
+            transform: translateX(15px) scale(1.02);
+            border-color: #FFD700;
+            box-shadow: 0 10px 25px rgba(255,215,0,0.2);
+        }
+
+        /* Princess Carousel Styles */
+        .carousel-container {
+            position: relative;
+            width: 100%;
+            max-width: 1200px;
+            margin: 2rem auto;
+            overflow: hidden;
+            border-radius: 25px;
+            background: linear-gradient(145deg, 
+                rgba(255,255,255,0.05), 
+                rgba(255,255,255,0.02));
+            backdrop-filter: blur(20px);
+            padding: 2rem;
+        }
+
+        .carousel-track {
+            display: flex;
+            transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            gap: 2rem;
+        }
+
+        .glass-story-card {
+            min-width: 380px;
+            height: 500px;
+            background: linear-gradient(145deg, 
+                rgba(255,255,255,0.15), 
+                rgba(255,255,255,0.05));
+            backdrop-filter: blur(25px);
+            border: 2px solid rgba(255,215,0,0.3);
+            border-radius: 25px;
+            padding: 0;
+            overflow: hidden;
+            position: relative;
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            cursor: pointer;
+            box-shadow: 
+                0 25px 50px rgba(0,0,0,0.3),
+                inset 0 1px 0 rgba(255,255,255,0.2);
+        }
+
+        .glass-story-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, 
+                transparent, 
+                rgba(255,215,0,0.1), 
+                transparent);
+            transition: left 0.8s;
+            z-index: 1;
+        }
+
+        .glass-story-card:hover::before {
+            left: 100%;
+        }
+
+        .glass-story-card:hover {
+            transform: translateY(-15px) scale(1.05);
+            border-color: rgba(255,215,0,0.6);
+            box-shadow: 
+                0 35px 70px rgba(0,0,0,0.4),
+                0 0 50px rgba(255,215,0,0.3),
+                inset 0 1px 0 rgba(255,255,255,0.3);
+        }
+
+        .glass-card-inner {
+            position: relative;
+            z-index: 2;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            padding: 2rem;
+        }
+
+        .princess-portrait {
+            text-align: center;
+            margin-bottom: 1.5rem;
+            position: relative;
+        }
+
+        .princess-emoji {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+            display: block;
+            animation: princessFloat 3s ease-in-out infinite;
+        }
+
+        @keyframes princessFloat {
+            0%, 100% { transform: translateY(0px) rotate(0deg); }
+            25% { transform: translateY(-8px) rotate(2deg); }
+            50% { transform: translateY(-12px) rotate(0deg); }
+            75% { transform: translateY(-8px) rotate(-2deg); }
+        }
+
+        .princess-accessories {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .accessory {
+            font-size: 1.8rem;
+            animation: accessorySparkle 2s ease-in-out infinite;
+            transition: all 0.3s ease;
+        }
+
+        .accessory:hover {
+            transform: scale(1.3) rotate(15deg);
+        }
+
+        @keyframes accessorySparkle {
+            0%, 100% { 
+                transform: scale(1) rotate(0deg);
+                filter: drop-shadow(0 0 5px rgba(255,215,0,0.5));
+            }
+            50% { 
+                transform: scale(1.1) rotate(5deg);
+                filter: drop-shadow(0 0 15px rgba(255,215,0,0.8));
+            }
+        }
+
+        .story-content {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .princess-name {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #FFD700;
+            text-align: center;
+            margin-bottom: 1.5rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+
+        .story-elements {
+            flex: 1;
+            margin-bottom: 1.5rem;
+        }
+
+        .story-item {
+            display: flex;
+            align-items: center;
+            margin: 0.8rem 0;
+            padding: 0.5rem;
+            background: rgba(255,215,0,0.1);
+            border-radius: 15px;
+            border-left: 3px solid #FFD700;
+            transition: all 0.3s ease;
+        }
+
+        .story-item:hover {
+            background: rgba(255,215,0,0.2);
+            transform: translateX(10px);
+            box-shadow: 0 5px 15px rgba(255,215,0,0.2);
+        }
+
+        .story-item span {
+            margin-left: 0.8rem;
+            color: #E6E6FA;
+            font-weight: 600;
+            font-size: 0.95rem;
+        }
+
+        .story-quote {
+            font-family: 'Dancing Script', cursive;
+            font-size: 1.3rem;
+            color: #FF69B4;
+            text-align: center;
+            font-style: italic;
+            margin-top: auto;
+            padding: 1rem;
+            background: linear-gradient(145deg, 
+                rgba(255,105,180,0.1), 
+                rgba(255,20,147,0.1));
+            border-radius: 15px;
+            border: 1px solid rgba(255,105,180,0.3);
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+        }
+
+        .carousel-controls {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .carousel-btn {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background: linear-gradient(45deg, #FFD700, #FFA500);
+            border: none;
+            color: #1a1a2e;
+            font-size: 1.5rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 8px 20px rgba(255,215,0,0.3);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .carousel-btn:hover {
+            transform: scale(1.1);
+            box-shadow: 0 12px 30px rgba(255,215,0,0.4);
+            background: linear-gradient(45deg, #FFA500, #FFD700);
+        }
+
+        .carousel-btn:active {
+            transform: scale(0.95);
+        }
+
+        .carousel-indicators {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .indicator {
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            background: rgba(255,215,0,0.3);
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+        }
+
+        .indicator.active {
+            background: #FFD700;
+            transform: scale(1.3);
+            box-shadow: 0 0 15px rgba(255,215,0,0.6);
+            border-color: rgba(255,255,255,0.5);
+        }
+
+        .indicator:hover {
+            background: rgba(255,215,0,0.6);
+            transform: scale(1.1);
+        }
+
+        /* Princess-specific themes */
+        .glass-story-card[data-princess="priyankaaa💫"]:hover {
+            background: linear-gradient(145deg, 
+                rgba(255,215,0,0.2), 
+                rgba(255,165,0,0.1));
+        }
+        .glass-story-card[data-princess="cinderella"]:hover {
+            background: linear-gradient(145deg, 
+                rgba(135,206,250,0.2), 
+                rgba(173,216,230,0.1));
+        }
+
+        .glass-story-card[data-princess="belle"]:hover {
+            background: linear-gradient(145deg, 
+                rgba(255,215,0,0.2), 
+                rgba(255,165,0,0.1));
+        }
+
+        .glass-story-card[data-princess="ariel"]:hover {
+            background: linear-gradient(145deg, 
+                rgba(0,191,255,0.2), 
+                rgba(30,144,255,0.1));
+        }
+
+        .glass-story-card[data-princess="jasmine"]:hover {
+            background: linear-gradient(145deg, 
+                rgba(255,20,147,0.2), 
+                rgba(255,105,180,0.1));
+        }
+
+        .glass-story-card[data-princess="rapunzel"]:hover {
+            background: linear-gradient(145deg, 
+                rgba(147,112,219,0.2), 
+                rgba(138,43,226,0.1));
+        }
+
+        .glass-story-card[data-princess="snow-white"]:hover {
+            background: linear-gradient(145deg, 
+                rgba(255,0,0,0.2), 
+                rgba(220,20,60,0.1));
+        }
+
+        @media (max-width: 768px) {
+            .royal-title {
+                font-size: 2.5rem;
+            }
+            
+            .modern-crown {
+                width: 80px;
+                height: 80px;
+            }
+            
+            .crown-inner {
+                font-size: 2rem;
+            }
+            
+            .royal-subtitle {
+                font-size: 1rem;
+            }
+            
+            .modern-hero {
+                min-height: 30vh;
+            }
+            
+            .premium-section {
+                grid-template-columns: 1fr;
+                padding: 1.5rem;
+            }
+            
+            .premium-memory-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+
+            .glass-story-card {
+                min-width: 320px;
+                height: 450px;
+            }
+
+            .carousel-container {
+                padding: 1rem;
+            }
+
+            .carousel-track {
+                gap: 1rem;
+            }
+
+            .princess-emoji {
+                font-size: 3rem;
+            }
+
+            .princess-name {
+                font-size: 1.5rem;
+            }
+
+            .story-quote {
+                font-size: 1.1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="premium-fireworks" id="premiumFireworks"></div>
+    
+    <header class="royal-header">
+        <div class="modern-hero">
+            <div class="hero-content">
+                <div class="modern-crown">
+                    <div class="crown-circle">
+                        <div class="crown-inner">👸🏻</div>
+                    </div>
+                </div>
+                <h1 class="royal-title">Disney Princess Stories</h1>
+                <p class="royal-subtitle">Discover Magical Tales & Enchanted Adventures</p>
+            </div>
+        </div>
+    </header>
+
+    <div class="premium-section">
+        <!-- Royal Birthday Proclamation -->
+        <div class="luxury-card">
+            <div class="card-crown">
+                <svg class="crown-svg" viewBox="0 0 80 60" fill="none">
+                    <path d="M10 45 L15 15 L25 35 L30 10 L35 35 L45 15 L50 35 L55 10 L60 35 L70 15 L75 45 Z" fill="url(#crownGradient)"/>
+                    <circle cx="30" cy="20" r="4" fill="#FF1493"/>
+                    <circle cx="40" cy="25" r="3" fill="#FF69B4"/>
+                    <circle cx="50" cy="20" r="4" fill="#FF1493"/>
+                    <defs>
+                        <linearGradient id="crownGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color:#FFD700"/>
+                            <stop offset="50%" style="stop-color:#FFA500"/>
+                            <stop offset="100%" style="stop-color:#FF8C00"/>
+                        </linearGradient>
+                    </defs>
+                </svg>
+            </div>
+            <h2 class="luxury-title">Royal Proclamation</h2>
+            <div class="score-royal" id="royalCountdown">🎂 Today We Celebrate <br>Our Princess Priyankaaa💫 🎂</div>
+            <button class="premium-button" onclick="royalCelebration()">Begin Royal Festivities ✨</button>
+        </div>
+
+        <!-- Enchanted Wish Chamber -->
+        <div class="luxury-card">
+            <div class="card-crown">
+                <svg class="crown-svg" viewBox="0 0 80 60" fill="none">
+                    <path d="M40 10 L35 25 L20 25 L32 35 L27 50 L40 40 L53 50 L48 35 L60 25 L45 25 Z" fill="url(#starGradient)"/>
+                    <defs>
+                        <linearGradient id="starGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color:#FFD700"/>
+                            <stop offset="100%" style="stop-color:#FFA500"/>
+                        </linearGradient>
+                    </defs>
+                </svg>
+            </div>
+            <h2 class="luxury-title">Enchanted Wish Chamber</h2>
+            <input type="text" id="royalWishInput" class="royal-input" placeholder="Whisper your royal birthday wish...">
+            <button class="premium-button" onclick="castRoyalWish()">Cast Your Royal Wish 🌟</button>
+            <div class="wish-showcase" id="royalWishDisplay">Your magical wishes shall be inscribed here in golden letters Princess Priyankaaa💫... ✨</div>
+        </div>
+
+        <!-- Royal Memory Palace -->
+        <div class="luxury-card">
+            <div class="card-crown">
+                <svg class="crown-svg" viewBox="0 0 80 60" fill="none">
+                    <rect x="20" y="35" width="40" height="20" fill="url(#castleGradient)" rx="5"/>
+                    <rect x="15" y="25" width="15" height="30" fill="url(#towerGradient)" rx="3"/>
+                    <rect x="50" y="25" width="15" height="30" fill="url(#towerGradient)" rx="3"/>
+                    <polygon points="22.5,25 22.5,15 27.5,20" fill="#FFD700"/>
+                    <polygon points="57.5,25 57.5,15 62.5,20" fill="#FFD700"/>
+                    <defs>
+                        <linearGradient id="castleGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color:#FF1493"/>
+                            <stop offset="100%" style="stop-color:#FF69B4"/>
+                        </linearGradient>
+                        <linearGradient id="towerGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color:#4169E1"/>
+                            <stop offset="100%" style="stop-color:#6495ED"/>
+                        </linearGradient>
+                    </defs>
+                </svg>
+            </div>
+            <h2 class="luxury-title">Royal Memory Palace</h2>
+            <div class="score-royal">Royal Score: <span id="luxuryMemoryScore">0</span></div>
+            <div class="premium-memory-grid" id="luxuryMemoryGrid"></div>
+            <button class="premium-button" onclick="startLuxuryMemoryGame()">New Royal Challenge 🎮</button>
+        </div>
+
+        <!-- Royal Color Alchemy -->
+        <div class="luxury-card">
+            <div class="card-crown">
+                <svg class="crown-svg" viewBox="0 0 80 60" fill="none">
+                    <circle cx="25" cy="30" r="12" fill="#FF1493" opacity="0.8"/>
+                    <circle cx="40" cy="30" r="12" fill="#4169E1" opacity="0.8"/>
+                    <circle cx="55" cy="30" r="12" fill="#FFD700" opacity="0.8"/>
+                </svg>
+            </div>
+            <h2 class="luxury-title">Royal Color Alchemy</h2>
+            <p style="color: #E6E6FA; margin: 1rem 0;">Transform your kingdom with royal magic!</p>
+            <div style="display: flex; justify-content: center; gap: 1.5rem; margin: 1.5rem 0; flex-wrap: wrap;">
+                <div style="width: 50px; height: 50px; border-radius: 50%; background: linear-gradient(45deg, #FF1493, #FF69B4); cursor: pointer; border: 3px solid #FFD700; transition: all 0.3s ease;" onclick="royalThemeChange('#FF1493', '#FF69B4')" onmouseover="this.style.transform='scale(1.2)'" onmouseout="this.style.transform='scale(1)'"></div>
+                <div style="width: 50px; height: 50px; border-radius: 50%; background: linear-gradient(45deg, #9b59b6, #8e44ad); cursor: pointer; border: 3px solid #FFD700; transition: all 0.3s ease;" onclick="royalThemeChange('#9b59b6', '#8e44ad')" onmouseover="this.style.transform='scale(1.2)'" onmouseout="this.style.transform='scale(1)'"></div>
+                <div style="width: 50px; height: 50px; border-radius: 50%; background: linear-gradient(45deg, #3498db, #2980b9); cursor: pointer; border: 3px solid #FFD700; transition: all 0.3s ease;" onclick="royalThemeChange('#3498db', '#2980b9')" onmouseover="this.style.transform='scale(1.2)'" onmouseout="this.style.transform='scale(1)'"></div>
+                <div style="width: 50px; height: 50px; border-radius: 50%; background: linear-gradient(45deg, #e74c3c, #c0392b); cursor: pointer; border: 3px solid #FFD700; transition: all 0.3s ease;" onclick="royalThemeChange('#e74c3c', '#c0392b')" onmouseover="this.style.transform='scale(1.2)'" onmouseout="this.style.transform='scale(1)'"></div>
+            </div>
+            <button class="premium-button" onclick="randomRoyalMagic()">Royal Surprise Magic! 🌈</button>
+        </div>
+
+        <!-- Royal Portrait Studio -->
+        <div class="luxury-card">
+            <div class="card-crown">
+                <svg class="crown-svg" viewBox="0 0 80 60" fill="none">
+                    <rect x="15" y="15" width="50" height="35" fill="none" stroke="#FFD700" stroke-width="3" rx="5"/>
+                    <circle cx="30" cy="28" r="3" fill="#FF69B4"/>
+                    <circle cx="50" cy="28" r="3" fill="#FF69B4"/>
+                    <path d="M35 35 Q40 40 45 35" stroke="#FF69B4" stroke-width="2" fill="none"/>
+                </svg>
+            </div>
+            <h2 class="luxury-title">Royal Portrait Studio</h2>
+            <div class="royal-photo-frame" id="royalPhotoFrame">👸</div>
+            <button class="premium-button" onclick="changeRoyalPrincess()">Royal Transformation 👑</button>
+            <button class="premium-button" onclick="addRoyalAccessory()">Royal Accessories ✨</button>
+        </div>
+
+        <!-- Enchanted Birthday Cake -->
+        <div class="luxury-card">
+            <div class="card-crown">
+                <svg class="crown-svg" viewBox="0 0 80 60" fill="none">
+                    <rect x="20" y="35" width="40" height="20" fill="url(#cakeGradient)" rx="5"/>
+                    <rect x="25" y="25" width="30" height="15" fill="url(#frostingGradient)" rx="8"/>
+                    <rect x="37" y="15" width="2" height="10" fill="#fff"/>
+                    <rect x="41" y="15" width="2" height="10" fill="#fff"/>
+                    <ellipse cx="38" cy="13" rx="1.5" ry="3" fill="#FF4500"/>
+                    <ellipse cx="42" cy="13" rx="1.5" ry="3" fill="#FF4500"/>
+                    <defs>
+                        <linearGradient id="cakeGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color:#8B4513"/>
+                            <stop offset="100%" style="stop-color:#A0522D"/>
+                        </linearGradient>
+                        <linearGradient id="frostingGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color:#FFD700"/>
+                            <stop offset="100%" style="stop-color:#FFA500"/>
+                        </linearGradient>
+                    </defs>
+                </svg>
+            </div>
+            <h2 class="luxury-title">Enchanted Birthday Cake</h2>
+            <div class="premium-cake">
+                <svg class="luxury-cake-svg" viewBox="0 0 180 180" onclick="royalCandleBlow()">
+                    <!-- Cake Base -->
+                    <rect x="30" y="120" width="120" height="40" fill="url(#luxuryCakeBase)" rx="8"/>
+                    <rect x="25" y="115" width="130" height="8" fill="url(#luxuryFrosting)" rx="4"/>
+                    
+                    <!-- Cake Layer 2 -->
+                    <rect x="40" y="90" width="100" height="30" fill="url(#luxuryCakeLayer)" rx="6"/>
+                    <rect x="35" y="85" width="110" height="8" fill="url(#luxuryFrosting2)" rx="4"/>
+                    
+                    <!-- Candles -->
+                    <rect class="candle-flame" x="65" y="65" width="4" height="20" fill="#fff"/>
+                    <rect class="candle-flame" x="85" y="65" width="4" height="20" fill="#fff"/>
+                    <rect class="candle-flame" x="105" y="65" width="4" height="20" fill="#fff"/>
+                    
+                    <!-- Flames -->
+                    <ellipse class="candle-flame" cx="67" cy="62" rx="3" ry="6" fill="url(#flameGradient)"/>
+                    <ellipse class="candle-flame" cx="87" cy="62" rx="3" ry="6" fill="url(#flameGradient)"/>
+                    <ellipse class="candle-flame" cx="107" cy="62" rx="3" ry="6" fill="url(#flameGradient)"/>
+                    
+                    <!-- Decorations -->
+                    <circle cx="50" cy="100" r="3" fill="#FF1493"/>
+                    <circle cx="70" cy="105" r="3" fill="#FF69B4"/>
+                    <circle cx="90" cy="100" r="3" fill="#FF1493"/>
+                    <circle cx="110" cy="105" r="3" fill="#FF69B4"/>
+                    <circle cx="130" cy="100" r="3" fill="#FF1493"/>
+                    
+                    <defs>
+                        <linearGradient id="luxuryCakeBase" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color:#8B4513"/>
+                            <stop offset="100%" style="stop-color:#A0522D"/>
+                        </linearGradient>
+                        <linearGradient id="luxuryCakeLayer" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color:#D2691E"/>
+                            <stop offset="100%" style="stop-color:#CD853F"/>
+                        </linearGradient>
+                        <linearGradient id="luxuryFrosting" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color:#FFD700"/>
+                            <stop offset="50%" style="stop-color:#FFA500"/>
+                            <stop offset="100%" style="stop-color:#FF8C00"/>
+                        </linearGradient>
+                        <linearGradient id="luxuryFrosting2" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color:#FF69B4"/>
+                            <stop offset="100%" style="stop-color:#FF1493"/>
+                        </linearGradient>
+                        <linearGradient id="flameGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color:#FFD700"/>
+                            <stop offset="50%" style="stop-color:#FF4500"/>
+                            <stop offset="100%" style="stop-color:#FF0000"/>
+                        </linearGradient>
+                    </defs>
+                </svg>
+                <p style="color: #E6E6FA; margin: 1rem 0;">Click the royal cake to make your birthday wish Princess Priyankaaa💫 🕯️</p>
+                <div id="royalCakeMessage" style="color: #FFD700; font-size: 1.2rem; margin: 1rem 0;"></div>
+            </div>
+        </div>
+
+        <!-- Royal Knowledge Academy -->
+        <div class="luxury-card">
+            <div class="card-crown">
+                <svg class="crown-svg" viewBox="0 0 80 60" fill="none">
+                    <rect x="25" y="30" width="30" height="25" fill="url(#bookGradient)" rx="3"/>
+                    <rect x="27" y="32" width="26" height="2" fill="#FFD700"/>
+                    <rect x="27" y="36" width="26" height="2" fill="#FFD700"/>
+                    <rect x="27" y="40" width="26" height="2" fill="#FFD700"/>
+                    <rect x="27" y="44" width="26" height="2" fill="#FFD700"/>
+                    <defs>
+                        <linearGradient id="bookGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color:#4169E1"/>
+                            <stop offset="100%" style="stop-color:#6495ED"/>
+                        </linearGradient>
+                    </defs>
+                </svg>
+            </div>
+            <h2 class="luxury-title">Royal Knowledge Academy</h2>
+            <div class="quiz-luxury">
+                <div class="quiz-question-premium" id="royalQuizQuestion">Which Disney princess has a pet tiger named Rajah?</div>
+                <div class="quiz-options-premium" id="royalQuizOptions">
+                    <div class="quiz-option-luxury" onclick="answerRoyalQuiz(0)">Belle</div>
+                    <div class="quiz-option-luxury" onclick="answerRoyalQuiz(1)">Priyankaaa💫</div>
+                    <div class="quiz-option-luxury" onclick="answerRoyalQuiz(2)">Jasmine</div>
+                    <div class="quiz-option-luxury" onclick="answerRoyalQuiz(3)">Mulan</div>
+                </div>
+                <div class="score-royal">Academy Score: <span id="royalQuizScore">0</span>/5</div>
+                <button class="premium-button" onclick="nextRoyalQuestion()">Next Royal Question 📚</button>
+            </div>
+        </div>
+
+        <!-- Disney Princess Story Carousel -->
+        <div class="luxury-card" style="grid-column: 1 / -1; max-width: none;">
+            <div class="card-crown">
+                <svg class="crown-svg" viewBox="0 0 80 60" fill="none">
+                    <path d="M10 45 L15 15 L25 35 L30 10 L35 35 L45 15 L50 35 L55 10 L60 35 L70 15 L75 45 Z" fill="url(#carouselCrownGradient)"/>
+                    <circle cx="25" cy="25" r="3" fill="#FF1493"/>
+                    <circle cx="40" cy="20" r="4" fill="#FFD700"/>
+                    <circle cx="55" cy="25" r="3" fill="#FF69B4"/>
+                    <defs>
+                        <linearGradient id="carouselCrownGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color:#FFD700"/>
+                            <stop offset="50%" style="stop-color:#FFA500"/>
+                            <stop offset="100%" style="stop-color:#FF8C00"/>
+                        </linearGradient>
+                    </defs>
+                </svg>
+            </div>
+            <h2 class="luxury-title">Royal Princess Story Carousel</h2>
+            <p style="text-align: center; color: #E6E6FA; margin: 1.5rem 0; font-size: 1.1rem;">Discover the magical tales of Disney's most beloved princesses</p>
+            
+            <div class="carousel-container">
+                <div class="carousel-track" id="princessCarousel">
+                    <!-- Priyankaaa -->
+                    <div class="glass-story-card" data-princess="priyankaaa💫">
+                        <div class="glass-card-inner">
+                            <div class="princess-portrait">
+                                <div class="princess-emoji">👸🏻</div>
+                                    <div class="princess-accessories">
+                                        <span class="accessory star">🌟</span>
+                                        <span class="accessory sparkles">✨</span>
+                                        <span class="accessory crown">👸</span>
+                                    </div>
+                                </div>
+                                <div class="story-content">
+                                    <h3 class="princess-name">Princess Priyankaaa💫</h3>
+                                    <div class="story-elements">
+                                        <div class="story-item">🌟 <span>Shines with Her Own Magic</span></div>
+                                        <div class="story-item">✨ <span>A Smile Brighter than Stars</span></div>
+                                        <div class="story-item">📖 <span>Writing Her Own Fairytale</span></div>
+                                        <div class="story-item">💫 <span>Graceful, Unique & Inspiring</span></div>
+                                    </div>
+                                    <p class="story-quote">🌸 “A smile like hers can brighten any kingdom ✨"</p>
+                                </div>
+                            </div>
+                    </div>
+
+                    <!-- Cinderella -->
+                    <div class="glass-story-card" data-princess="cinderella">
+                        <div class="glass-card-inner">
+                            <div class="princess-portrait">
+                                <div class="princess-emoji">👸🏼</div>
+                                <div class="princess-accessories">
+                                    <span class="accessory glass-slipper">👠</span>
+                                    <span class="accessory pumpkin">🎃</span>
+                                    <span class="accessory magic-wand">🪄</span>
+                                </div>
+                            </div>
+                            <div class="story-content">
+                                <h3 class="princess-name">Princess Cinderella</h3>
+                                <div class="story-elements">
+                                    <div class="story-item">🏰 <span>Royal Ball at Midnight</span></div>
+                                    <div class="story-item">✨ <span>Fairy Godmother's Magic</span></div>
+                                    <div class="story-item">👠 <span>The Glass Slipper</span></div>
+                                    <div class="story-item">🤴 <span>Prince Charming's Love</span></div>
+                                </div>
+                                <p class="story-quote">"Have courage and be kind"</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Belle -->
+                    <div class="glass-story-card" data-princess="belle">
+                        <div class="glass-card-inner">
+                            <div class="princess-portrait">
+                                <div class="princess-emoji">👸🏻</div>
+                                <div class="princess-accessories">
+                                    <span class="accessory book">📚</span>
+                                    <span class="accessory rose">🌹</span>
+                                    <span class="accessory beast">🦁</span>
+                                </div>
+                            </div>
+                            <div class="story-content">
+                                <h3 class="princess-name">Princess Belle</h3>
+                                <div class="story-elements">
+                                    <div class="story-item">📚 <span>Love for Books & Learning</span></div>
+                                    <div class="story-item">🏰 <span>Enchanted Castle</span></div>
+                                    <div class="story-item">🌹 <span>The Magical Rose</span></div>
+                                    <div class="story-item">💖 <span>True Love's Power</span></div>
+                                </div>
+                                <p class="story-quote">"Adventure in the great wide somewhere"</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Ariel -->
+                    <div class="glass-story-card" data-princess="ariel">
+                        <div class="glass-card-inner">
+                            <div class="princess-portrait">
+                                <div class="princess-emoji">🧜🏻‍♀️</div>
+                                <div class="princess-accessories">
+                                    <span class="accessory shell">🐚</span>
+                                    <span class="accessory trident">🔱</span>
+                                    <span class="accessory fish">🐠</span>
+                                </div>
+                            </div>
+                            <div class="story-content">
+                                <h3 class="princess-name">Princess Ariel</h3>
+                                <div class="story-elements">
+                                    <div class="story-item">🌊 <span>Under the Sea Kingdom</span></div>
+                                    <div class="story-item">🎵 <span>Beautiful Voice & Song</span></div>
+                                    <div class="story-item">🔱 <span>King Triton's Daughter</span></div>
+                                    <div class="story-item">🏖️ <span>Dreams of Human World</span></div>
+                                </div>
+                                <p class="story-quote">"Part of your world"</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Jasmine -->
+                    <div class="glass-story-card" data-princess="jasmine">
+                        <div class="glass-card-inner">
+                            <div class="princess-portrait">
+                                <div class="princess-emoji">👸🏽</div>
+                                <div class="princess-accessories">
+                                    <span class="accessory tiger">🐅</span>
+                                    <span class="accessory lamp">🪔</span>
+                                    <span class="accessory carpet">🧞‍♂️</span>
+                                </div>
+                            </div>
+                            <div class="story-content">
+                                <h3 class="princess-name">Princess Jasmine</h3>
+                                <div class="story-elements">
+                                    <div class="story-item">🏜️ <span>Arabian Desert Kingdom</span></div>
+                                    <div class="story-item">🐅 <span>Rajah the Royal Tiger</span></div>
+                                    <div class="story-item">🧞‍♂️ <span>Magic Carpet Adventures</span></div>
+                                    <div class="story-item">💫 <span>A Whole New World</span></div>
+                                </div>
+                                <p class="story-quote">"I am not a prize to be won"</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Rapunzel -->
+                    <div class="glass-story-card" data-princess="rapunzel">
+                        <div class="glass-card-inner">
+                            <div class="princess-portrait">
+                                <div class="princess-emoji">👸🏼</div>
+                                <div class="princess-accessories">
+                                    <span class="accessory hair">💇‍♀️</span>
+                                    <span class="accessory tower">🗼</span>
+                                    <span class="accessory lantern">🏮</span>
+                                </div>
+                            </div>
+                            <div class="story-content">
+                                <h3 class="princess-name">Princess Rapunzel</h3>
+                                <div class="story-elements">
+                                    <div class="story-item">🗼 <span>Tower in the Forest</span></div>
+                                    <div class="story-item">💇‍♀️ <span>Magical Golden Hair</span></div>
+                                    <div class="story-item">🏮 <span>Floating Lanterns</span></div>
+                                    <div class="story-item">🎨 <span>Artist & Dreamer</span></div>
+                                </div>
+                                <p class="story-quote">"When will my life begin?"</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Snow White -->
+                    <div class="glass-story-card" data-princess="snow-white">
+                        <div class="glass-card-inner">
+                            <div class="princess-portrait">
+                                <div class="princess-emoji">👸🏻</div>
+                                <div class="princess-accessories">
+                                    <span class="accessory apple">🍎</span>
+                                    <span class="accessory mirror">🪞</span>
+                                    <span class="accessory dwarf">👨‍🦲</span>
+                                </div>
+                            </div>
+                            <div class="story-content">
+                                <h3 class="princess-name">Snow White</h3>
+                                <div class="story-elements">
+                                    <div class="story-item">🏔️ <span>Seven Dwarfs' Cottage</span></div>
+                                    <div class="story-item">🍎 <span>The Poisoned Apple</span></div>
+                                    <div class="story-item">🪞 <span>Magic Mirror's Truth</span></div>
+                                    <div class="story-item">💋 <span>True Love's Kiss</span></div>
+                                </div>
+                                <p class="story-quote">"Fairest of them all"</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="carousel-controls">
+                    <button class="carousel-btn prev-btn" onclick="previousPrincess()">❮</button>
+                    <div class="carousel-indicators" id="carouselIndicators"></div>
+                    <button class="carousel-btn next-btn" onclick="nextPrincess()">❯</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Royal Music Conservatory -->
+        <div class="luxury-card">
+            <div class="card-crown">
+                <svg class="crown-svg" viewBox="0 0 80 60" fill="none">
+                    <circle cx="40" cy="30" r="20" fill="none" stroke="url(#musicGradient)" stroke-width="3"/>
+                    <path d="M30 25 Q40 20 50 25 Q40 35 30 25" fill="url(#noteGradient)"/>
+                    <rect x="48" y="15" width="2" height="20" fill="#FFD700"/>
+                    <defs>
+                        <linearGradient id="musicGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color:#FFD700"/>
+                            <stop offset="100%" style="stop-color:#FFA500"/>
+                        </linearGradient>
+                        <linearGradient id="noteGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color:#FF1493"/>
+                            <stop offset="100%" style="stop-color:#FF69B4"/>
+                        </linearGradient>
+                    </defs>
+                </svg>
+            </div>
+            <h2 class="luxury-title">Royal Music Conservatory</h2>
+            <div style="text-align: center;">
+                <p style="color: #E6E6FA; margin: 1.5rem 0;">Enchant the kingdom with royal melodies!</p>
+    
+                <!-- Main Royal Play Button -->
+                <button style="width: 100px; height: 100px; border-radius: 50%; background: linear-gradient(45deg, #FFD700, #FFA500); border: none; color: #1a1a2e; font-size: 2.5rem; cursor: pointer; transition: all 0.3s ease; margin: 1rem; box-shadow: 0 10px 25px rgba(255,215,0,0.3);" 
+                onclick="playRoyalMusic()" 
+                id="royalMusicBtn" 
+                onmouseover="this.style.transform='scale(1.1)'" 
+                onmouseout="this.style.transform='scale(1)'">▶️</button>
+
+                <!-- Royal Sound Buttons -->
+                <div style="margin: 1.5rem 0;">
+                    <button class="premium-button" onclick="playRoyalSound('celebration')">Royal Fanfare 🎺</button>
+                    <button class="premium-button" onclick="playRoyalSound('magical')">Enchanted Melody 🎵</button>
+                    <button class="premium-button" onclick="playRoyalSound('birthday')">Birthday Serenade 🎂</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Premium sparkle animation
+        function createPremiumSparkle() {
+            const sparkle = document.createElement('div');
+            sparkle.className = 'premium-sparkle';
+            sparkle.style.left = Math.random() * 100 + 'vw';
+            sparkle.style.animationDelay = Math.random() * 4 + 's';
+            document.body.appendChild(sparkle);
+            
+            setTimeout(() => {
+                sparkle.remove();
+            }, 4000);
+        }
+
+        setInterval(createPremiumSparkle, 200);
+
+        // Royal celebration
+        function royalCelebration() {
+            createLuxuryFireworks();
+            document.getElementById('royalCountdown').innerHTML = '🎉 LONG LIVE THE BIRTHDAY PRINCESS! 🎉';
+            playRoyalSound('celebration');
+            
+            // Add crown animation to all cards
+            document.querySelectorAll('.crown-svg').forEach(crown => {
+                crown.style.animation = 'crownMajesty 1s ease-in-out infinite';
+            });
+        }
+
+        // Luxury fireworks
+        function createLuxuryFireworks() {
+            const fireworksContainer = document.getElementById('premiumFireworks');
+            const luxuryColors = ['#FFD700', '#FF1493', '#4169E1', '#FF69B4', '#FFA500', '#9370DB'];
+            
+            for (let i = 0; i < 30; i++) {
+                setTimeout(() => {
+                    const firework = document.createElement('div');
+                    firework.className = 'luxury-firework';
+                    firework.style.left = Math.random() * 100 + 'vw';
+                    firework.style.top = Math.random() * 60 + 'vh';
+                    firework.style.background = `radial-gradient(circle, ${luxuryColors[Math.floor(Math.random() * luxuryColors.length)]}, transparent)`;
+                    firework.style.boxShadow = `0 0 20px ${luxuryColors[Math.floor(Math.random() * luxuryColors.length)]}`;
+                    fireworksContainer.appendChild(firework);
+                    
+                    setTimeout(() => firework.remove(), 2000);
+                }, i * 150);
+            }
+        }
+
+        // Royal wish maker
+        function castRoyalWish() {
+            const wishInput = document.getElementById('royalWishInput');
+            const wishDisplay = document.getElementById('royalWishDisplay');
+            const wish = wishInput.value.trim();
+            
+            if (wish) {
+                const royalSymbols = ['💫ꟼ', '✨', '🌟ꟼ', '💎', '🦄','ꟼ', '🏰', '🌙', '⭐'];
+                const randomSymbol = royalSymbols[Math.floor(Math.random() * royalSymbols.length)];
+                wishDisplay.innerHTML += `<p style="color: #FFD700; font-weight: 600; margin: 0.5rem 0;">${randomSymbol} "${wish}" ${randomSymbol}</p>`;
+                wishInput.value = '';
+                createPremiumSparkleEffect();
+                playRoyalSound('magical');
+            }
+        }
+
+        function createPremiumSparkleEffect() {
+            for (let i = 0; i < 15; i++) {
+                setTimeout(createPremiumSparkle, i * 80);
+            }
+        }
+
+        // Luxury memory game
+        let luxuryMemoryCards = [];
+        let luxuryFlippedCards = [];
+        let luxuryMemoryScore = 0;
+        const royalEmojis = ['💫ꟼ', '🏰', '👸', '🦄', '💎', '🌟ꟼ', '🎀', '🌹','ꟼ'];
+
+        function startLuxuryMemoryGame() {
+            const grid = document.getElementById('luxuryMemoryGrid');
+            grid.innerHTML = '';
+            luxuryMemoryCards = [...royalEmojis, ...royalEmojis].sort(() => Math.random() - 0.5);
+            luxuryFlippedCards = [];
+            luxuryMemoryScore = 0;
+            document.getElementById('luxuryMemoryScore').textContent = luxuryMemoryScore;
+            
+            luxuryMemoryCards.forEach((emoji, index) => {
+                const card = document.createElement('div');
+                card.className = 'luxury-memory-card';
+                card.textContent = '?';
+                card.dataset.emoji = emoji;
+                card.dataset.index = index;
+                card.onclick = () => flipLuxuryCard(card);
+                grid.appendChild(card);
+            });
+        }
+
+        function flipLuxuryCard(card) {
+            if (luxuryFlippedCards.length < 2 && !card.classList.contains('flipped')) {
+                card.classList.add('flipped');
+                card.textContent = card.dataset.emoji;
+                luxuryFlippedCards.push(card);
+                
+                if (luxuryFlippedCards.length === 2) {
+                    setTimeout(checkLuxuryMatch, 1200);
+                }
+            }
+        }
+
+        function checkLuxuryMatch() {
+            const [card1, card2] = luxuryFlippedCards;
+            if (card1.dataset.emoji === card2.dataset.emoji) {
+                luxuryMemoryScore += 15;
+                document.getElementById('luxuryMemoryScore').textContent = luxuryMemoryScore;
+                playRoyalSound('magical');
+                createPremiumSparkleEffect();
+            } else {
+                card1.classList.remove('flipped');
+                card2.classList.remove('flipped');
+                card1.textContent = '?';
+                card2.textContent = '?';
+            }
+            luxuryFlippedCards = [];
+        }
+
+        // Royal theme changer
+        function royalThemeChange(primary, secondary) {
+            document.body.style.background = `linear-gradient(135deg, #1a1a2e, ${primary}, ${secondary}, #533483)`;
+            
+            // Update card borders
+            document.querySelectorAll('.luxury-card').forEach(card => {
+                card.style.borderColor = `rgba(255,215,0,0.5)`;
+            });
+            
+            createPremiumSparkleEffect();
+            playRoyalSound('magical');
+        }
+
+        function randomRoyalMagic() {
+            const royalThemes = [
+                ['#FF1493', '#FF69B4'],
+                ['#9b59b6', '#8e44ad'],
+                ['#3498db', '#2980b9'],
+                ['#e74c3c', '#c0392b'],
+                ['#f39c12', '#e67e22'],
+                ['#1abc9c', '#16a085'],
+                ['#9370DB', '#8A2BE2']
+            ];
+            const randomTheme = royalThemes[Math.floor(Math.random() * royalThemes.length)];
+            royalThemeChange(randomTheme[0], randomTheme[1]);
+            createLuxuryFireworks();
+        }
+
+        // Royal portrait studio
+        const royalPrincesses = ['👸', '👸🏻', '👸🏼', '👸🏽', '👸🏾', '👸🏿', '🧚‍♀️', '🧚🏻‍♀️', '🧚🏼‍♀️', '🧚🏽‍♀️', '🧚🏾‍♀️', '🧚🏿‍♀️'];
+        const royalAccessories = ['👑', '💎', '🎀', '🌹', '⭐', '✨', '💫', '🦄', '🏰', '🌟'];
+        let currentRoyalPrincess = 0;
+
+        function changeRoyalPrincess() {
+            currentRoyalPrincess = (currentRoyalPrincess + 1) % royalPrincesses.length;
+            document.getElementById('royalPhotoFrame').textContent = royalPrincesses[currentRoyalPrincess];
+            playRoyalSound('magical');
+            createPremiumSparkleEffect();
+        }
+
+        function addRoyalAccessory() {
+            const frame = document.getElementById('royalPhotoFrame');
+            const accessory = royalAccessories[Math.floor(Math.random() * royalAccessories.length)];
+            frame.textContent += accessory;
+            playRoyalSound('celebration');
+        }
+
+        // Royal cake interaction
+        let royalCandlesLit = true;
+
+        function royalCandleBlow() {
+            const candles = document.querySelectorAll('.candle-flame');
+            const message = document.getElementById('royalCakeMessage');
+            
+            if (royalCandlesLit) {
+                candles.forEach(candle => {
+                    candle.style.opacity = '0.2';
+                    candle.style.transform = 'scale(0.5)';
+                });
+                message.innerHTML = '🎉 HAPPY ROYAL BIRTHDAY Priyankaaa💫! Your wish has been granted! 🎉';
+                royalCandlesLit = false;
+                createLuxuryFireworks();
+                playRoyalSound('birthday');
+                
+                // Add special birthday animation
+                document.querySelector('.luxury-cake-svg').style.animation = 'luxuryFirework 2s ease-out';
+            } else {
+                candles.forEach(candle => {
+                    candle.style.opacity = '1';
+                    candle.style.transform = 'scale(1)';
+                });
+                message.innerHTML = '🕯️ The royal candles shine bright once more! 🕯️';
+                royalCandlesLit = true;
+                playRoyalSound('magical');
+            }
+        }
+
+        // Royal quiz
+        const royalQuizQuestions = [
+            {
+                question: "Which Disney princess has a pet tiger named Rajah?",
+                options: ["Belle", "Priyankaaa💫", "Ariel", "Mulan"],
+                correct: 1
+            },
+            {
+                question: "What color is Belle's enchanted ball gown?",
+                options: ["Royal Blue", "Rose Pink", "Golden Yellow", "Emerald Green"],
+                correct: 2
+            },
+            {
+                question: "Which princess rules the underwater kingdom of Atlantica?",
+                options: ["Cinderella", "Ariel", "Priyankaaa💫", "Aurora"],
+                correct: 2
+            },
+            {
+                question: "What magical object does Cinderella's fairy godmother transform into a royal carriage?",
+                options: ["Golden Apple", "Enchanted Pumpkin", "Glass Slipper", "Magic Mirror"],
+                correct: 1
+            },
+            {
+                question: "Which princess possesses the longest magical hair in all the kingdoms?",
+                options: ["Priyankaaa💫", "Belle", "Rapunzel", "Pocahontas"],
+                correct: 0
+            }
+        ];
+
+        let currentRoyalQuestion = 0;
+        let royalQuizScore = 0;
+
+        function answerRoyalQuiz(selectedAnswer) {
+            if (selectedAnswer === royalQuizQuestions[currentRoyalQuestion].correct) {
+                royalQuizScore++;
+                document.getElementById('royalQuizScore').textContent = royalQuizScore;
+                playRoyalSound('magical');
+                createPremiumSparkleEffect();
+                showRoyalMessage('👑 Correct! Royal wisdom increases! 👑');
+            } else {
+                playRoyalSound('celebration');
+                showRoyalMessage('💫 Keep learning, noble scholar! 💫');
+            }
+            
+            setTimeout(() => {
+                nextRoyalQuestion();
+            }, 1500);
+        }
+
+        function nextRoyalQuestion() {
+            currentRoyalQuestion = (currentRoyalQuestion + 1) % royalQuizQuestions.length;
+            const question = royalQuizQuestions[currentRoyalQuestion];
+            
+            document.getElementById('royalQuizQuestion').textContent = question.question;
+            const optionsContainer = document.getElementById('royalQuizOptions');
+            optionsContainer.innerHTML = '';
+            
+            question.options.forEach((option, index) => {
+                const optionDiv = document.createElement('div');
+                optionDiv.className = 'quiz-option-luxury';
+                optionDiv.textContent = option;
+                optionDiv.onclick = () => answerRoyalQuiz(index);
+                optionsContainer.appendChild(optionDiv);
+            });
+        }
+
+        // Royal sound effects
+        function playRoyalSound(type) {
+            const btn = document.getElementById('royalMusicBtn');
+            const royalMessages = {
+                'celebration': '🎺 Royal fanfare echoes through the kingdom! 🎺',
+                'magical': '✨ Enchanted melodies fill the air! ✨',
+                'birthday': '🎂 The royal birthday serenade begins! 🎂'
+            };
+            
+            btn.textContent = '🎵';
+            btn.style.background = 'linear-gradient(45deg, #FF1493, #FF69B4)';
+            setTimeout(() => {
+                btn.textContent = '▶️';
+                btn.style.background = 'linear-gradient(45deg, #FFD700, #FFA500)';
+            }, 1500);
+            
+            if (royalMessages[type]) {
+                showRoyalMessage(royalMessages[type]);
+            }
+        }
+
+        function playRoyalMusic() {
+            playRoyalSound('magical');
+            createPremiumSparkleEffect();
+            
+            // Animate all crowns
+            document.querySelectorAll('.crown-svg').forEach(crown => {
+                crown.style.animation = 'crownMajesty 2s ease-in-out';
+            });
+        }
+
+        function showRoyalMessage(message) {
+            const messageDiv = document.createElement('div');
+            messageDiv.style.cssText = `
+                position: fixed;
+                top: 30px;
+                right: 30px;
+                background: linear-gradient(45deg, rgba(255,215,0,0.95), rgba(255,165,0,0.95));
+                color: #1a1a2e;
+                padding: 1.5rem 2rem;
+                border-radius: 25px;
+                z-index: 1001;
+                font-weight: 700;
+                font-size: 1.1rem;
+                box-shadow: 0 15px 35px rgba(0,0,0,0.3);
+                border: 2px solid #FFD700;
+                animation: slideIn 0.5s ease;
+                backdrop-filter: blur(10px);
+            `;
+            messageDiv.textContent = message;
+            document.body.appendChild(messageDiv);
+            
+            setTimeout(() => {
+                messageDiv.style.animation = 'slideOut 0.5s ease forwards';
+                setTimeout(() => messageDiv.remove(), 500);
+            }, 3500);
+        }
+
+        // Princess Carousel Functionality
+        let currentPrincessIndex = 0;
+        const totalPrincesses = 6;
+
+        function initializeCarousel() {
+            const indicatorsContainer = document.getElementById('carouselIndicators');
+            indicatorsContainer.innerHTML = '';
+            
+            for (let i = 0; i < totalPrincesses; i++) {
+                const indicator = document.createElement('div');
+                indicator.className = `indicator ${i === 0 ? 'active' : ''}`;
+                indicator.onclick = () => goToPrincess(i);
+                indicatorsContainer.appendChild(indicator);
+            }
+            
+            updateCarouselPosition();
+        }
+
+        function updateCarouselPosition() {
+            const track = document.getElementById('princessCarousel');
+            const cardWidth = 380 + 32; // card width + gap
+            track.style.transform = `translateX(-${currentPrincessIndex * cardWidth}px)`;
+            
+            // Update indicators
+            document.querySelectorAll('.indicator').forEach((indicator, index) => {
+                indicator.classList.toggle('active', index === currentPrincessIndex);
+            });
+            
+            // Add special effects for current princess
+            document.querySelectorAll('.glass-story-card').forEach((card, index) => {
+                if (index === currentPrincessIndex) {
+                    card.style.transform = 'scale(1.02)';
+                    card.style.zIndex = '10';
+                } else {
+                    card.style.transform = 'scale(1)';
+                    card.style.zIndex = '1';
+                }
+            });
+        }
+
+        function nextPrincess() {
+            currentPrincessIndex = (currentPrincessIndex + 1) % totalPrincesses;
+            updateCarouselPosition();
+            playRoyalSound('magical');
+            createPremiumSparkleEffect();
+            
+            // Show princess message
+            const princessNames = ['Priyankaaa💫', 'Cinderella', 'Belle', 'Ariel', 'Jasmine', 'Rapunzel', 'Snow White'];
+            showRoyalMessage(`✨ Now featuring Princess ${princessNames[currentPrincessIndex]}! ✨`);
+        }
+
+        function previousPrincess() {
+            currentPrincessIndex = (currentPrincessIndex - 1 + totalPrincesses) % totalPrincesses;
+            updateCarouselPosition();
+            playRoyalSound('magical');
+            createPremiumSparkleEffect();
+            
+            // Show princess message
+            const princessNames = ['Priyankaaa💫', 'Cinderella', 'Belle', 'Ariel', 'Jasmine', 'Rapunzel', 'Snow White'];
+            showRoyalMessage(`✨ Now featuring Princess ${princessNames[currentPrincessIndex]}! ✨`);
+        }
+
+        function goToPrincess(index) {
+            currentPrincessIndex = index;
+            updateCarouselPosition();
+            playRoyalSound('celebration');
+            createPremiumSparkleEffect();
+            
+            const princessNames = ['Priyankaaa💫','Cinderella', 'Belle', 'Ariel', 'Jasmine', 'Rapunzel', 'Snow White'];
+            showRoyalMessage(`👑 Welcome to ${princessNames[currentPrincessIndex]}'s story! 👑`);
+        }
+
+        // Auto-rotate carousel
+        function startCarouselAutoRotate() {
+            setInterval(() => {
+                nextPrincess();
+            }, 8000); // Change princess every 8 seconds
+        }
+
+        // Add click handlers to princess cards
+        function addPrincessCardInteractions() {
+            document.querySelectorAll('.glass-story-card').forEach((card, index) => {
+                card.addEventListener('click', () => {
+                    const princessName = card.dataset.princess;
+                    const princessMessages = {
+                        'priyankaaa💫': '👑 "The queen of all fairytale!" – Princess Priyankaaa💫 shines brighter than all the stars! 💫✨',
+                        'cinderella': '👠 "Have courage and be kind!" - Princess Cinderella sparkles with magic! ✨',
+                        'belle': '📚 "Adventure in the great wide somewhere!" - Belle opens her heart to wonder! 🌹',
+                        'ariel': '🧜‍♀️ "Part of your world!" - Ariel dreams of life above the waves! 🌊',
+                        'jasmine': '🏜️ "I am not a prize to be won!" - Jasmine soars on magic carpets! 🧞‍♂️',
+                        'rapunzel': '🗼 "When will my life begin?" - Rapunzel paints her dreams! 🎨',
+                        'snow-white': '🍎 "Fairest of them all!" - Snow White befriends forest creatures! 🏔️'
+                    };
+                    
+                    showRoyalMessage(princessMessages[princessName]);
+                    createLuxuryFireworks();
+                    playRoyalSound('celebration');
+                    
+                    // Add special animation to clicked card
+                    card.style.animation = 'luxuryFirework 1s ease-out';
+                    setTimeout(() => {
+                        card.style.animation = '';
+                    }, 1000);
+                });
+            });
+        }
+
+        // Initialize luxury memory game
+        startLuxuryMemoryGame();
+
+        // Initialize carousel
+        initializeCarousel();
+        addPrincessCardInteractions();
+        
+        // Start auto-rotate after a delay
+        setTimeout(startCarouselAutoRotate, 6000);
+
+        // Add enter key support for royal wishes
+        document.getElementById('royalWishInput').addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                castRoyalWish();
+            }
+        });
+
+        // Royal welcome ceremony
+        setTimeout(() => {
+            showRoyalMessage('🏰 Welcome to your Royal Birthday Castle, Your Majesty💫 👑✨');
+            createPremiumSparkleEffect();
+        }, 1500);
+        // Preload sounds (replace with your own audio files)
+        const royalSounds = {
+            // celebration: new Audio("./frozen1.m4a"), // Royal Fanfare
+            // magical: new Audio("./frozen2.m4a"), // Magical Melody
+            // birthday: new Audio("./hb orcher.m4a") // Birthday tune
+        };
+
+        // General Royal Music (Main Button)
+        function playRoyalMusic() {
+            const mainMusic = new Audio("./hb orcher.m4a");
+            mainMusic.play();
+        }
+
+        // Play specific sound
+        function playRoyalSound(type) {
+            if (royalSounds[type]) {
+                royalSounds[type].currentTime = 0; // Restart if clicked again
+                royalSounds[type].play();
+            }
+        };
+
+        // Add CSS animations
+        const style = document.createElement('style');
+        style.textContent = `
+            @keyframes slideIn {
+                from { transform: translateX(100%); opacity: 0; }
+                to { transform: translateX(0); opacity: 1; }
+            }
+            @keyframes slideOut {
+                from { transform: translateX(0); opacity: 1; }
+                to { transform: translateX(100%); opacity: 0; }
+            }
+        `;
+        document.head.appendChild(style);
+    </script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'97c58ece44e33f97',t:'MTc1NzQwOTA4My4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
